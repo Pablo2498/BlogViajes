@@ -1,0 +1,225 @@
+html {
+    box-sizing: border-box;
+}
+
+.hola {
+    padding: 20px;
+    margin: 20px;
+}
+
+*, *:before, *after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana , Geneva, serif;
+}
+
+header {
+    padding: 20px 0;
+}
+
+div.contenedor {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/** NAVEGACION **/
+
+.navegacion {
+    background-color: #db008b;
+}
+
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;   
+}
+
+nav > ul > li {/*PRIMER NIVEL DE UL Y PRIMER NIVEL LI*/
+    float: left;
+}
+
+nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+nav ul li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 20px;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #00b8e4;
+}
+
+/** SEGUNDO NIVEL DE MENUS **/ 
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 184, 228, 0.7);
+    display: none;
+}
+
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: rgba(0, 184, 228, 0.7);
+}
+
+/** CONTENIDO PRINCIPAL **/
+
+div.contenido::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main {
+    width: 70%;
+    float: left;
+}
+
+
+/** ENTRADAS DE POST **/
+
+article {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #00b8e4;
+}
+
+article img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+article p {
+    line-height: 2;
+    text-align: justify;
+    margin-right: 40px;
+}
+
+.boton {
+    background-color: #00b8e4;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;  
+}
+
+/** SIDE BAR **/
+
+aside {
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-top: 20px;
+    padding: 10px 0 10px 10px;
+}
+
+aside ul li:hover{
+    background-color: #00b8e4;
+    cursor: pointer;
+}
+
+aside ul li a {
+    color: #00b8e4;
+    text-decoration: none;
+}
+
+aside ul li:hover a {
+    color: #ffffff;
+}
+
+
+/** FOOTER **/
+
+footer {
+    background-color: #db008d;
+    padding-top: 40px;
+    margin-top: 30px;
+}
+
+footer h2 {
+    color: #ffffff;
+}
+
+footer .contenedor::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer div.nosotros {
+    float: left;
+    width: 30%;
+    color: #ffffff;
+} 
+
+footer div.menu {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+footer nav {
+    width: auto;
+}
+
+footer nav ul li a {
+    width: auto;
+}
+
+p.copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
